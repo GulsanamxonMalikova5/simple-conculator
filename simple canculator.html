@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="canculator.css">
+    <title>Canculator</title>
+</head>
+<body>
+   <h1>Simple conculator, For you</h1>
+   <form name="canculator">
+       <table>
+           <tr>
+               <td colspan="4">
+                   <input type="text" name="display" id="display" disabled placeholder="0"> 
+                     
+               </td>
+           </tr>
+           <tr>
+               <td><input type="button" name="seven" value="7" onclick="canculator.display.value += '7'"></td>
+               <td><input type="button" name="eight" value="8" onclick="canculator.display.value += '8'"></td>
+               <td><input type="button" name="nine" value="9" onclick="canculator.display.value += '9'"></td>
+               <td><input type="button" name="times" class="operator" value="x" onclick="canculator.display.value +='*'"></td>
+           </tr>
+           <tr>
+            <td><input type="button" name="four" value="4" onclick="canculator.display.value += '4'"></td>
+            <td><input type="button" name="five" value="5" onclick="canculator.display.value += '5'"></td>
+            <td><input type="button" name="six" value="6" onclick="canculator.display.value += '6'"></td>
+            <td><input type="button" name="minus" class="operator" value="-" onclick="canculator.display.value +='-'"></td>
+        </tr>
+        <tr>
+            <td><input type="button" name="one" value="1" onclick="canculator.display.value += '1'"></td>
+            <td><input type="button" name="two" value="2" onclick="canculator.display.value += '2'"></td>
+            <td><input type="button" name="three" value="3" onclick="canculator.display.value += '3'"></td>
+            <td><input type="button" name="plus" class="operator" value="+" onclick="canculator.display.value +='+'"></td>
+        </tr>
+        <tr>
+            <td><input type="button" name="clear" value="c" onclick="canculator.display.value = ''"></td>
+            <td><input type="button" name="zero" value="0" onclick="canculator.display.value += '0'"></td>
+            <td><input type="button" name="doit" value="=" onclick="canculator.display.value = eval(canculator.display.value)"></td>
+            <td><input type="button" name="div" class="operator" value="/" onclick="canculator.display.value +='/'"></td>
+        </tr>
+       </table>
+   </form> 
+   <h5 class="address">Made by <a href="#" >💻Rayyona💻</a></h5>
+</body>
+</html>
